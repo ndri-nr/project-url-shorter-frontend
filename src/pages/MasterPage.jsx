@@ -14,12 +14,8 @@ const MasterPage = () => {
 
   const [placeholder] = useState("https://");
   const [inputValue, setInputValue] = useState("");
-  const [resultUrl, setResultUrl] = useState("https");
+  const [resultUrl, setResultUrl] = useState("");
   const [showResultContainer, setShowResultContainer] = useState(false);
-
-  useEffect(() => {
-    setResultUrl("https://sambung.link/asdaw21");
-  }, []);
 
   useEffect(() => {
     if (resultUrl.length > 1) setShowResultContainer(true);

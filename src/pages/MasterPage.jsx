@@ -27,6 +27,9 @@ const MasterPage = () => {
       case 'info':
         messageApi.info(message);
         break;
+      case 'success':
+        messageApi.success(message);
+        break;
       case 'error':
         messageApi.error(message);
         break;
@@ -98,7 +101,7 @@ const MasterPage = () => {
               <BoxUrl 
                 url={resultUrl} 
                 onClick={() => {
-                  copyToClipboard(resultUrl, 'info');
+                  copyToClipboard(resultUrl, 'success');
                 }}
               />
             )}

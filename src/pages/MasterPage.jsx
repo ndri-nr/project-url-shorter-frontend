@@ -40,7 +40,7 @@ const MasterPage = () => {
   
   const copyToClipboard = (text, type) => {
     navigator.clipboard.writeText(text);
-    sendNotif(type, 'Link copied !');
+    sendNotif(type, 'Link copied!');
   };
 
   const fetchCreateUrl = async () => {

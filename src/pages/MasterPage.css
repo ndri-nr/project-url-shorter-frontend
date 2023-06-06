@@ -1,0 +1,12 @@
+.btn-with-input {
+  border-start-start-radius: 0 !important;
+  border-end-start-radius: 0 !important;
+}
+
+.input-custom {
+  font-family: 'K2D';
+}
+
+.input-custom:active, .input-custom:hover {
+  border-color: #5cc72a;
+}

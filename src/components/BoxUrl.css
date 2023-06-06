@@ -1,0 +1,14 @@
+.box-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-url {
+    background: #fff;
+    min-width: 300px;
+    margin-top: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 4px 0px;
+}

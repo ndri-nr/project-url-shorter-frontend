@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import MasterPage from './pages/MasterPage';
 import UrlDetail from './pages/UrlDetail/UrlDetail';
 import './App.css';
+import './bootstrap.min.css';
 
 const App = () => {
   return (

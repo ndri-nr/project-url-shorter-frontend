@@ -48,8 +48,7 @@ const MasterPage = () => {
       const res = await dispatch(url.createLink(inputValue));
       
       if (res.status === 200) setResultUrl(APP_URL + "/" + res.data.url);
-      if (res.status === 404) sendNotif("error", res.message);
-      if (res.status === 500) sendNotif("error", res.message);
+      else sendNotif("error", res.message);
     } catch (err) {
       console.log("err ", err);
     }

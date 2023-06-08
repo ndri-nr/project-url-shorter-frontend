@@ -7,6 +7,8 @@
   font-family: 'K2D';
 }
 
-.input-custom:active, .input-custom:hover {
-  border-color: #5cc72a;
+.input-custom:active, 
+.input-custom:hover, 
+.input-custom:focus {
+  border-color: #5cc72a !important;
 }

@@ -17,7 +17,7 @@ const UrlDetail = () => {
     try {
       const res = await dispatch(url.getRedirect(slug));
       
-      if (res.status === 200) window.location = res.data.redirectTo;
+      if (res.status === 200) window.location = res.data;
       if (res.status === 404) setError(404);
       if (res.status === 500) setError(500);
     } catch (err) {

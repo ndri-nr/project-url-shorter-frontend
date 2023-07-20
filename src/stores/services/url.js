@@ -13,16 +13,19 @@ export const getRedirect = (slug) => async () => {
       data = response;
     } 
   } catch (err) {
-    return err.response.data ;
+    return err.response.data;
   }
 
   return data;
 };
 
-export const createLink = (url) => async () => {
+export const createLink = (id, url) => async () => {
   const BASE_URL = process.env.REACT_APP_API_URL;
 
-  let body = { url };
+  let body = { 
+    id: id,
+    url: url,
+  };
   let data = {};
 
   try {

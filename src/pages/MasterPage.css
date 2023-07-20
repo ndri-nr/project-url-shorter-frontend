@@ -12,3 +12,21 @@
 .input-custom:focus {
   border-color: #5cc72a !important;
 }
+
+.input-custom-id .ant-input-group-addon {
+  background-color: white;
+  border: 1px solid #5cc72a;
+  font-weight: bold;
+}
+
+.input-custom-id .ant-input, .input-custom-id .ant-input-group-addon {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  height: 43px;
+}
+
+.input-custom-id .ant-input:active, 
+.input-custom-id .ant-input:hover, 
+.input-custom-id .ant-input:focus {
+  border: 1px solid #5cc72a;
+}

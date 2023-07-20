@@ -2,6 +2,7 @@ import { useState, useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
 import Button from '../components/Button';
 import { Input, Space, message } from 'antd';
+import { LinkOutlined } from '@ant-design/icons';
 import * as url from '../stores/services/url';
 import './MasterPage.css';
 
@@ -12,7 +13,9 @@ const MasterPage = () => {
   const dispatch = useDispatch();
   const [messageApi, contextHolder] = message.useMessage();
 
-  const [placeholder] = useState("https://");
+  const [placeholder] = useState("https://your-long-url");
+  const [placeholderId] = useState("your-custom-link-id");
+  const [inputValueId, setInputValueId] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [resultUrl, setResultUrl] = useState("");
   const [showResultContainer, setShowResultContainer] = useState(false);
@@ -45,44 +48,40 @@ const MasterPage = () => {
 
   const fetchCreateUrl = async () => {
     try {
-      const res = await dispatch(url.createLink(inputValue));
+      const res = await dispatch(url.createLink(inputValueId, inputValue));
       
-      if (res.status === 200) setResultUrl(APP_URL + "/" + res.data.url);
+      if (res.status === 200) setResultUrl(APP_URL + "/" + res.data);
       else sendNotif("error", res.message);
     } catch (err) {
       console.log("err ", err);
     }
   };
 
-  const loginOnClick = () => {
-    console.log("login");
-  };
-
   const shortenInputOnChange = (obj) => {
     setInputValue(obj.target.value);
+  };
+
+  const inputIdOnChange = (obj) => {
+    setInputValueId(obj.target.value);
   };
 
   return (
     <section className="bg-gradient pt-5 pb-6">
       {contextHolder}
       <div className="container">
-        <div className="row">
-          <div className="col-12 d-flex flex-row align-items-center justify-content-between">
-            <a href={APP_URL} className="heading-brand">SambungLink</a>
-            <Button 
-              text={"Masuk"}
-              className={"btn-dark"}
-              onClick={loginOnClick}
-            />
-          </div>
-        </div>
         <div className="row mt-7">
           <div className="col-md-8 mx-auto text-center">
-            <h1>Sambung URL mu!</h1>
+            <h1>Sambung Link mu!</h1>
             <p className="lead mb-5">Sambung.link adalah platform yang inovatif untuk memperpendek URL 
               yang panjang menjadi lebih ringkas dan mudah diingat. Dengan Sambung.link, 
               Anda dapat dengan cepat menghasilkan tautan pendek yang dapat digunakan untuk 
               membagikan URL dengan mudah melalui pesan teks, email, atau media sosial.</p>
+            <Input 
+              className="input-custom-id" 
+              addonBefore="https://sambung.link/" 
+              placeholder={placeholderId}
+              onChange={inputIdOnChange} />
+            <LinkOutlined style={{ fontSize: '32px', color: '#499d21', marginTop: '12px', marginBottom: '12px' }} />
             <Space.Compact style={{ width: '100%' }}>
               <Input 
                 className="input-custom"

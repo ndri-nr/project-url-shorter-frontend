@@ -30,3 +30,13 @@
 .input-custom-id .ant-input:focus {
   border: 1px solid #5cc72a;
 }
+
+.mobile-mt-3 {
+  margin-top: 9rem;
+}
+
+@media (max-width: 768px) {
+  .mobile-mt-3 {
+    margin-top: 3rem !important;
+  }
+}

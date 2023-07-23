@@ -69,7 +69,7 @@ const MasterPage = () => {
     <section className="bg-gradient pt-5 pb-6">
       {contextHolder}
       <div className="container">
-        <div className="row mt-7">
+        <div className="row mobile-mt-3">
           <div className="col-md-8 mx-auto text-center">
             <h1>Sambung Link mu!</h1>
             <p className="lead mb-5">Sambung.link adalah platform yang inovatif untuk memperpendek URL 

@@ -72,7 +72,7 @@ const MasterPage = () => {
         <div className="row mobile-mt-3">
           <div className="col-md-8 mx-auto text-center">
             <h1>Sambung Link mu!</h1>
-            <p className="lead mb-5">Sambung.link adalah platform yang inovatif untuk memperpendek URL 
+            <p className="lead mb-5">Sambung.link adalah platform untuk memperpendek URL 
               yang panjang menjadi lebih ringkas dan mudah diingat. Dengan Sambung.link, 
               Anda dapat dengan cepat menghasilkan tautan pendek yang dapat digunakan untuk 
               membagikan URL dengan mudah melalui pesan teks, email, atau media sosial.</p>

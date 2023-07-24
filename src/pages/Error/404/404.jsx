@@ -1,12 +1,11 @@
 import icon from '../../../assets/astronout.svg';
-import { useNavigate } from 'react-router-dom';
 import './404.css';
 
 const NotFound = () => {
-  const navigate = useNavigate();
+  const APP_URL = process.env.REACT_APP_URL;
 
   const goToHome = () => {
-    navigate('/');
+    window.location = APP_URL;
   };
 
   return (

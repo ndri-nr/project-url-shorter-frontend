@@ -3,6 +3,10 @@
   border-end-start-radius: 0 !important;
 }
 
+.ant-input {
+  border-color: black !important;
+}
+
 .input-custom {
   font-family: 'K2D';
 }
@@ -10,12 +14,12 @@
 .input-custom:active, 
 .input-custom:hover, 
 .input-custom:focus {
-  border-color: #5cc72a !important;
+  border-color: black !important;
 }
 
 .input-custom-id .ant-input-group-addon {
   background-color: white;
-  border: 1px solid #5cc72a;
+  border: 1px solid black;
   font-weight: bold;
 }
 
@@ -28,11 +32,21 @@
 .input-custom-id .ant-input:active, 
 .input-custom-id .ant-input:hover, 
 .input-custom-id .ant-input:focus {
-  border: 1px solid #5cc72a;
+  border: 1px solid black !important;
 }
 
 .mobile-mt-3 {
   margin-top: 9rem;
+}
+
+.btn-success {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.btn-success:hover {
+  background-color: black !important;
+  border-color: black !important;
 }
 
 @media (max-width: 768px) {

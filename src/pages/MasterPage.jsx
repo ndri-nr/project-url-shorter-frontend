@@ -81,7 +81,7 @@ const MasterPage = () => {
               addonBefore="https://sambung.link/" 
               placeholder={placeholderId}
               onChange={inputIdOnChange} />
-            <LinkOutlined style={{ fontSize: '32px', color: '#499d21', marginTop: '12px', marginBottom: '12px' }} />
+            <LinkOutlined style={{ fontSize: '32px', color: 'black', marginTop: '12px', marginBottom: '12px' }} />
             <Space.Compact style={{ width: '100%' }}>
               <Input 
                 className="input-custom"

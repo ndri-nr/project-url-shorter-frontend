@@ -1,6 +1,6 @@
 {
-  "short_name": "SambungLink",
-  "name": "Sambung Link Shorten URL",
+  "name": "URL Shortener - Short URLs & Custom Free Link Shortener | Sambunglink",
+  "short_name": "Sambunglink",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,13 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo.png",
-      "type": "image/png",
-      "sizes": "48x48"
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "start_url": "https://sambung.link",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
 }

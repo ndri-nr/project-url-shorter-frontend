@@ -71,11 +71,8 @@ const MasterPage = () => {
       <div className="container">
         <div className="row mobile-mt-3">
           <div className="col-md-8 mx-auto text-center">
-            <h1>Sambung Link mu!</h1>
-            <p className="lead mb-5">Sambung.link adalah platform untuk memperpendek URL 
-              yang panjang menjadi lebih ringkas dan mudah diingat. Dengan Sambung.link, 
-              Anda dapat dengan cepat menghasilkan tautan pendek yang dapat digunakan untuk 
-              membagikan URL dengan mudah melalui pesan teks, email, atau media sosial.</p>
+            <h1>Launch yours!</h1>
+            <p className="lead mb-5">Sambung.link is a platform for shortening long URLs to be more concise and easy to remember. With Sambung.link, you can quickly generate short links that can be used to easily share URLs.</p>
             <Input 
               className="input-custom-id" 
               addonBefore="https://sambung.link/" 
@@ -90,7 +87,7 @@ const MasterPage = () => {
                 onPressEnter={fetchCreateUrl}
               />
               <Button 
-                text={"Sambungkan"}
+                text={"Launch"}
                 className={"btn-success btn-with-input"}
                 onClick={fetchCreateUrl}
               />

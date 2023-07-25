@@ -66,7 +66,7 @@ const MasterPage = () => {
   };
 
   return (
-    <section className="bg-gradient pt-5 pb-6">
+    <section className="pt-5 pb-6">
       {contextHolder}
       <div className="container">
         <div className="row mobile-mt-3">

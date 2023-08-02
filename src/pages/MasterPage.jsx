@@ -13,8 +13,8 @@ const MasterPage = () => {
   const dispatch = useDispatch();
   const [messageApi, contextHolder] = message.useMessage();
 
-  const [placeholder] = useState("https://your-long-url");
-  const [placeholderId] = useState("your-custom-link-id");
+  const [placeholder] = useState("https://your-long-url*");
+  const [placeholderId] = useState("your-custom-link-id*");
   const [inputValueId, setInputValueId] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [resultUrl, setResultUrl] = useState("");

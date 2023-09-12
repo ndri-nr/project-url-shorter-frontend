@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { CopyOutlined } from '@ant-design/icons';
 import './BoxUrl.css';
 
 const BoxUrl = ({ url, onClick }) => {
@@ -8,7 +9,8 @@ const BoxUrl = ({ url, onClick }) => {
         className="btn box-url"
         onClick={onClick}
       >
-        {url}
+        <div style={{ width: '100%' }}>{url}</div>
+        <CopyOutlined style={{ fontSize: '16px', color: 'black', padding: '4px' }} />
       </div>
     </div>
   );

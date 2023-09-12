@@ -51,6 +51,12 @@
 
 @media (max-width: 768px) {
   .mobile-mt-3 {
-    margin-top: 3rem !important;
+    margin-top: 3em !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .mobile-mt-3 {
+    margin-top: 0em !important;
   }
 }
